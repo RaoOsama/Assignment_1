@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .logo {
+        width: 70px;
+            margin: 20px;
+            padding: 10px;
+        height: 70px;
+        border-radius: 50px;
+    }
+
+        header, footer {
+            background-color: rgb(25, 12, 4);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: rgb(39, 19, 6);
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            /* border-radius: 4px; */
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffffffcb;
+           color: rgb(39, 19, 6) ;
+        }
+
+        section {
+            padding: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            color: rgb(39, 19, 6);
+        }
+
+        article {
+            margin: 0 1em;
+            flex: 1 1 300px;
+            background-color: rgb(255, 255, 255);
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(30, 22, 7, 0.625);
+            margin-bottom: 1em;
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color:rgb(39, 19, 6);
+        }
+
+        form {
+            margin-top: 1em;
+            background-color: #ffffff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        /* .label{
+            color: rgb(25, 12, 4);
+        } ; */
+    
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            color: rgb(25, 12, 4);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: rgb(25, 12, 4);;
+            color: #ecf0f1;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        footer {
+            background-color: rgb(25, 12, 4);;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .logo {
+            float: left;
+            margin-right: 20px;
+        }
+        .osama{
+            background-color:rgb(25, 12, 4);
+            color: white;
+
+        }
+        .osamaa{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://img.pikbest.com/origin/09/70/06/222pIkbEsTrCh.jpg!sw800" alt="Coffee Haven Logo" class="logo">
+        <h1>Coffee Haven</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Welcome to Coffee Haven!</h2>
+            <p>Discover the finest coffee blends and enjoy a cozy atmosphere.</p>
+        </article>
+
+        <article>
+            <h2>Menu</h2>
+            <p>Explore our delightful coffee options, pastries, and more.</p>
+        </article>
+
+        <article>
+            <h2>About Us</h2>
+            <p>Learn about our passion for coffee and commitment to quality.</p>
+        </article>
+
+        <article class="osama">
+            <h2 class="osamaa">Contact</h2>
+            <p>Get in touch with us for inquiries or to book an event.</p>
+
+            <form>
+                <label for="name" class="label">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Coffee Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
