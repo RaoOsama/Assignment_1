@@ -4,68 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven</title>
-    <style>
-        img{
-            width: 200px;
-            height: 100px;
-        }
-    </style>
-
+    <title>assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 align="center" display="inline-blocked">Coffee Haven</h1>
-        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gSRhsM1aU2AwxZHJs1_8uqzU4ZiGqBtnDw&usqp=CAU
-            alt="Coffee Haven Logo" align="top-left">
-        <p >Your Daily Source of Aromatic Bliss</p>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <section>
-        <h2>Welcome to Coffee Haven!</h2>
-        <p>Indulge in the finest coffee experience.</p>
-
-        <h2>Our Coffee Menu</h2>
-        <form action="#" method="post">
-            <label for="coffeeType">Choose your favorite coffee:</label>
-            <select id="coffeeType" name="coffeeType">
-                <option value="espresso">Espresso</option>
-                <option value="latte">Latte</option>
-                <option value="cappuccino">Cappuccino</option>
-                <option value="americano">Americano</option>
-                <option value="mocha">Mocha</option>
-            </select>
-
-            <br><br>
-
-            <label for="quantity">Select quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10">
-
-            <br><br>
-
-            <input type="submit" value="Order Now">
+    <div class="container">
+        <h1>Registration Form</h1>
+        <h4>please fill out this form with the required information</h4>
+        <br><br>
+        <form>
+            <label for="">Enter Your First Name:</label>
+            <input type="text" placeholder="">
+            <label for="">Enter Your Last Name:</label>
+            <input type="text" placeholder="">
+            <label for="">Enter Your E-Mail:</label>
+            <input type="email" placeholder="">
+            <label for="">Create A New Password:</label>
+            <input type="password" placeholder="">
         </form>
 
-        <h2>Discover Our Coffee World</h2>
-        <img src="https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
-            alt="Coffee Image">
-        <img src="https://media.istockphoto.com/id/1303583671/photo/cup-glass-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.jpg?s=612x612&w=0&k=20&c=fAh3m6Hqxz-qeA45Tj2jGARhRiGFhgm80dLVthnvlD8="
-            alt="Coffee Image">
-        <img src="data:image/jpeg;base64,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"
-            alt="Coffee Image">
-    </section>
+        <br>
+        <hr>
+        <div class="radio-container">
+            <input type="radio" name="businessAccount" id="personal">
+            <label for="personal">Personal Account</label>
+          </div>
+          
+          <div class="radio-container">
+            <input type="radio" name="businessAccount" id="business">
+            <label for="business">Business Account</label>
+          </div>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" name="termsAndCondition" id="terms">
+            <label for="terms">I accept the <a href="terms and conditions">terms and conditions</a></label>
+          </div>
+          
+<!-- 
+        <input class="" type="radio" name="business Account">
+        <label class="" for="">Personal Account</label>
+        <input class="" type="radio" name="business Account">
+        <label class="" for="">Business Account</label>
+        <input class="" type="checkbox" name="terms and condition">
+        <label class="" for="">I accept the <a href="terms and conditions">terms and conditions</a></label> -->
 
-    <footer>
-        <p>&copy; 2023 Coffee Haven. All rights reserved.</p>
-    </footer>
+        <br>
+        <hr>
+        <form action="">
+            <label for="">Upload a profile: </label>
+            <input type="file" placeholder="">
+            <label for="">Input your age (years:)</label>
+            <input type="text" placeholder="">
+            <label for="">How did you hear about us?</label>
+            <select class="sama" name="choose option" id="">
+                <option value="">select one</option>
+                <option value="">select abc</option>
+                <option value="">select xyz</option>
+            </select>
+            <label for="">Provide a bio:</label>
+            <textarea name="bio" id="bio" rows="4" placeholder="I like coding on the beach..."></textarea>
+        </form><br><br>
+
+        <div class="btn">
+            <button align="center">submit</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

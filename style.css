@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#000f38;
+    margin: 2px;
+    padding: 2px;
+}
+
+.container{
+    width: 35%;
+    margin: auto;
+}
+
+h1, h4 {
+    text-align: center;
+    color: white;
+}
+
+/* .form {
+    max-width:700px;
+    margin: 0 auto;
+    background-color: #000f38;
+    padding: 20px;
+    border-radius: 8px; 
+    color: white;
+   
+} */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    background-color: #000f38;
+    width: 100%;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #000921;
+    border-radius: 4px;
+    background-color: #000921;
+     margin: 2px,400px,2px;
+}
+
+.sama{
+    background-color: #fff;
+    color: gray;
+} 
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    margin: auto;
+    background-color: #424074;
+    color: #fff;
+    padding: 10px 20px;
+    border:1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transition: 0.3s;
+    width:65% ;
+    color:#000f38 ;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #424074;
+}
+.radio-container,
+.checkbox-container {
+  display: flex;
+  align-items: left;
+}
+/* position: absolute; Remove from normal document flow */
+/* /* z-index: -1;       Place behind the label text
+margin-left: 5px;  Adjust horizontal spacing
+top: 50%;          Vertically center within label
+transform: translateY(-50%); Fine-tune vertical alignment */ */
+
+input[type="radio"],
+input[type="checkbox"] {
+  /* margin-right: 10px; */
+  z-index: -100;
+  margin-left: 500px;
+  top: 50%;
+  transform:translateY(-100%) ;
+}
+
+
+
+/* input[type="radio"],
+input[type="checkbox"] {
+    margin:1px;
+} */
+
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
